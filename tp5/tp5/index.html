@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cuestionario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="contenedor">
+
+    <section id="inicio">
+        <h1>Inicio del cuestionario</h1>
+
+        <p>Ingrese sus datos para comenzar</p>
+
+        <input type="text" id="nombre" placeholder="Nombre">
+
+        <input type="email" id="correo" placeholder="Correo">
+
+        <button id="btnInicio" disabled>Comenzar cuestionario</button>
+    </section>
+
+
+    <section id="quiz" class="oculto">
+
+        <h1>Cuestionario de Tecnología</h1>
+
+        <p>
+            Responda las siguientes preguntas seleccionando la opción correcta.
+        </p>
+
+        <div id="temporizador">
+            Tiempo: 0 segundos
+        </div>
+
+
+        <form id="formulario">
+
+
+            <h3>1- ¿Qué significa HTML?</h3>
+            <label><input type="radio" name="p1" value="correcta"> Lenguaje de marcado de hipertexto</label>
+            <label><input type="radio" name="p1" value="a"> Programa de diseño</label>
+            <label><input type="radio" name="p1" value="b"> Sistema operativo</label>
+
+
+            <h3>2- ¿Cuál es un lenguaje de estilos?</h3>
+            <label><input type="radio" name="p2" value="a"> Java</label>
+            <label><input type="radio" name="p2" value="correcta"> CSS</label>
+            <label><input type="radio" name="p2" value="b"> Python</label>
+
+
+            <h3>3- Seleccione lenguajes de programación</h3>
+            <label><input type="checkbox" name="p3" value="js"> JavaScript</label>
+            <label><input type="checkbox" name="p3" value="html"> HTML</label>
+            <label><input type="checkbox" name="p3" value="python"> Python</label>
+
+
+            <h3>4- ¿Qué hace JavaScript?</h3>
+            <label><input type="radio" name="p4" value="correcta"> Agrega interacción</label>
+            <label><input type="radio" name="p4" value="a"> Cambia hardware</label>
+            <label><input type="radio" name="p4" value="b"> Reemplaza internet</label>
+
+
+            <h3>5- ¿Qué etiqueta crea un título?</h3>
+            <label><input type="radio" name="p5" value="correcta"> h1</label>
+            <label><input type="radio" name="p5" value="a"> img</label>
+            <label><input type="radio" name="p5" value="b"> body</label>
+
+
+            <h3>6- Seleccione eventos de JavaScript</h3>
+            <label><input type="checkbox" name="p6" value="click"> click</label>
+            <label><input type="checkbox" name="p6" value="submit"> submit</label>
+            <label><input type="checkbox" name="p6" value="color"> color</label>
+
+
+            <h3>7- ¿Qué almacena una variable?</h3>
+            <label><input type="radio" name="p7" value="correcta"> Datos</label>
+            <label><input type="radio" name="p7" value="a"> Pantallas</label>
+            <label><input type="radio" name="p7" value="b"> Imágenes físicas</label>
+
+
+            <h3>8- ¿Qué permite CSS?</h3>
+            <label><input type="radio" name="p8" value="correcta"> Diseñar páginas web</label>
+            <label><input type="radio" name="p8" value="a"> Crear virus</label>
+            <label><input type="radio" name="p8" value="b"> Crear usuarios</label>
+
+
+            <h3>9- Seleccione tipos de input HTML</h3>
+            <label><input type="checkbox" name="p9" value="radio"> Radio</label>
+            <label><input type="checkbox" name="p9" value="text"> Text</label>
+            <label><input type="checkbox" name="p9" value="video"> Video</label>
+
+
+            <h3>10- ¿Qué controla un temporizador?</h3>
+            <label><input type="radio" name="p10" value="correcta"> Tiempo</label>
+            <label><input type="radio" name="p10" value="a"> Imágenes</label>
+            <label><input type="radio" name="p10" value="b"> Usuarios</label>
+
+
+            <button id="resolver" disabled>
+                Resolver cuestionario
+            </button>
+
+        </form>
+
+
+        <div id="resultado"></div>
+
+    </section>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
